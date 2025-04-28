@@ -27,6 +27,11 @@ html {
     font-size: 1em;
     color: variables.$text-base-color;
   }
+
+  a {
+    text-decoration: none;
+    color: variables.$text-base-color;
+  }
   
   .container {
     padding: 16px 16px;
