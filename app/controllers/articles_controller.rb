@@ -50,3 +50,6 @@ class ArticlesController < ApplicationController
     @article = Article.find(params[:id])
   end
 end
+
+
+# データベースのスキーマをモデルに記録 ー annotate
