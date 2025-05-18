@@ -1,5 +1,6 @@
 class ArticlesController < ApplicationController
   before_action :set_article, only: [ :show, :edit, :update ]
+  before_action :authenticate_user!, only: [:new, :create, :edit, :update, :destroy]
   def index
     @articles= Article.all
   end
@@ -50,6 +51,3 @@ class ArticlesController < ApplicationController
     @article = Article.find(params[:id])
   end
 end
-
-
-# データベースのスキーマをモデルに記録 ー annotate
